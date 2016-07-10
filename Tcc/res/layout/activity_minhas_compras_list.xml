@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back1small">
+	    
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver como gráfico"
+        android:onClick="goToChartView"
+        android:visibility="gone"/>
+    		
+    
+    <ListView android:id="@+id/activity_minhas_compras_list_compras"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+	     android:id="@+id/emptyElement"
+	     android:layout_width="wrap_content"
+	     android:layout_height="match_parent"
+	     android:layout_margin="10dp"
+	     android:text="NENHUMA COMPRA REALIZADA! \n Para fazer uma nova compra vá até o menu principal e clique em NOVA COMPRA.	"
+		 android:gravity="center_vertical|center"
+		 android:layout_gravity="center"
+	     android:textColor="@android:color/white"
+	     android:textSize="19.0sp"
+	     android:visibility="gone" />
+
+</LinearLayout>

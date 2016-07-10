@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" 
+    android:paddingLeft="5dp"
+    android:paddingStart="5dp">
+    
+    	<TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Produto: "
+            style="@style/label"/>
+    	
+    	<TextView android:id="@+id/dialog_insere_produto_nome_produto" 
+    	    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sabão "
+            android:maxLines="3"
+            style="@style/value"/>
+    	
+    	<TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Menor valor pago: "
+            style="@style/label"/>
+    	
+    	<TextView android:id="@+id/dialog_insere_produto_menor_valor"
+    	    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="R$ 1,00: "
+            style="@style/value"/>
+    	
+		<TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Maior valor pago:"
+            style="@style/label"/>    	
+    	
+    	<TextView android:id="@+id/dialog_insere_produto_maior_valor" 
+    	    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="R$: 5,00 "
+            style="@style/value"/>
+    	
+    	
+    	
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantidade: "
+            style="@style/label"/>
+        
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical">
+
+            <ImageButton android:id="@+id/dialog_insere_produto_decrementa_quantidade_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Clique para diminuir"
+                android:src="@drawable/ic_minus"
+               />
+            
+            <EditText android:id="@+id/dialog_insere_produto_quantidade_number_picker" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLength="7"
+                android:textSize="30sp"/>
+            
+            <ImageButton android:id="@+id/dialog_insere_produto_incrementa_quantidade_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Clique para aumentar"
+                android:src="@drawable/ic_action_new"
+                />
+            
+           	<Spinner android:id="@+id/dialog_insere_produto_spinner_unidade" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+
+        <TextView android:id="@+id/dialog_insere_produto_preco_unidade_label" 
+    	    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Preço unitário"
+            style="@style/label"/>
+        
+        <EditText android:id="@+id/dialog_insere_produto_valor" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o valor"
+            android:inputType="numberDecimal"
+            android:maxLength="11"
+            style="@style/priceStyle"
+            android:gravity="center_horizontal"/>
+        
+        
+</LinearLayout>

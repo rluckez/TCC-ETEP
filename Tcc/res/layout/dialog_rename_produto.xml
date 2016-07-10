@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Altere o nome do produto"
+            style="@style/label"/>
+		
+        <EditText android:id="@+id/dialog_rename_produto_nome" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    style="@style/value"
+		    android:singleLine="true"
+		    android:maxLength="128"/>
+		
+</LinearLayout>

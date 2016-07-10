@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1small"
+    android:orientation="vertical">
+
+     <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+	    
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:text="simular"
+	        android:onClick="simulaAddProduto"/>
+    
+    </LinearLayout>
+         
+   <ListView android:id="@+id/activity_compra_list_view_produtos_compra"
+       android:layout_width="match_parent"
+		android:layout_height="0dp"
+        android:layout_weight="10">       
+   </ListView>
+   
+    <TextView
+	    android:id="@+id/activity_compra_list_empty_view"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+        android:layout_weight="10"
+		android:layout_margin="10dp"
+	    android:text="NENHUM PRODUTO ADICIONADO! \nPara adicionar um produto clique no ícone da camêra ou clique no + no topo da página."
+	    android:textColor="@android:color/white"
+	    android:layout_gravity="center"
+	    android:gravity="center_vertical|center"
+	    android:textSize="19.0sp"
+	    android:visibility="gone" />
+	
+    <TextView android:id="@+id/activity_compra_total_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Total de 13 produtos por 34 reais"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:gravity="center_vertical|center_horizontal"
+        style="@style/list_big_text"/>
+	
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/finalizar"
+		android:textColor="@android:color/white"
+    	android:textSize="25sp"
+		android:onClick="salvarCompra"/>
+   
+     
+</LinearLayout>

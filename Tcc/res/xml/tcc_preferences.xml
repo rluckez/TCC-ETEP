@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:title="Geral">
+      
+    <CheckBoxPreference
+        android:key="usar_servidor"
+        android:defaultValue="true"
+        android:title="Buscar dados no servidor?"
+        android:summary="Quando ativado o sistema busca o produto escaneadp no servidor caso ele não exista no seu aparelho"
+        android:widgetLayout="@layout/custom_checkbox_layout"/>    
+  </PreferenceCategory>
+  
+</PreferenceScreen>

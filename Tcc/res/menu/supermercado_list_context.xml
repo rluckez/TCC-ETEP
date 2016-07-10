@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.luckez.tcc.SupermercadoListActivity" >
+    
+    <item
+        android:id="@+id/delete_button"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_discard"
+        android:title="@string/supermercado_button_delete_supermercado"        
+        android:orderInCategory="1"
+        />    
+
+</menu>

@@ -1,0 +1,101 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="SettingsTheme" parent="AppBaseTheme">
+	   <!-- Override properties according to your need -->
+	 
+	   <item name="android:textColorPrimary">#FFFFFF</item>
+	   <item name="android:textColorSecondary">#FFFFFF</item>
+       <item name="android:dividerHeight">2dp</item> 
+	</style>
+    
+    <style name="label" parent="AppBaseTheme">
+        <item name="android:textSize">15sp</item>        
+    </style>
+    
+    <style name="value" parent="AppBaseTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    
+    <style name="novo_produto_label" parent="AppBaseTheme">
+        <item name="android:textSize">25sp</item>        
+    </style>
+    
+    <style name="novo_produto_value" parent="AppBaseTheme">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    
+    <style name="priceStyle" parent="AppBaseTheme">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    
+    <style name="list_text" parent="AppBaseTheme">
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="value_menu" parent="AppBaseTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>        
+    </style>
+    
+    <style name="comment">
+        <item name="android:textSize">20sp</item>        
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+    
+    <style name="edit_text">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="list_big_text">
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="list_medium_text">
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="list_tiny_text">
+        <item name="android:textSize">12sp</item>
+    </style>
+	
+    <style name="app_title_about_activity">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    
+	<style name="ResultButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+    <item name="android:layout_width">0dip</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1</item>
+  </style>
+  <style name="ShareButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+</resources>

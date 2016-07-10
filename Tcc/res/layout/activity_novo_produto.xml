@@ -1,0 +1,100 @@
+<ScrollView android:id="@+id/novo_produto_scroll_view" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1small">
+
+	<LinearLayout 
+	    android:orientation="vertical" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/white"
+	        android:text="@string/label_novo_produto_codigo_produto"
+	        style="@style/novo_produto_label" />
+	    
+	    <TextView android:id="@+id/novo_produto_codigo_produto" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/white"
+	        android:hint="@string/hint_novo_produto_codigo_produto"
+	        style="@style/novo_produto_value"/>
+	    
+		<TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/white"
+	        android:text="@string/label_novo_produto_nome_produto" 
+	        style="@style/novo_produto_label"/>
+	     
+		<LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+			<EditText android:id="@+id/novo_produto_nome_produto" 
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:singleLine="true"
+		        android:textColor="@android:color/white"
+		        android:layout_weight="5"
+		        android:textCursorDrawable="@drawable/whitecursor"
+		        android:textColorHint="@android:color/white"
+		        android:hint="@string/hint_novo_produto_nome_produto"
+		        style="@style/novo_produto_value"/>
+			
+			<ImageButton android:id="@+id/activity_novo_produto_input_voice_button" 
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/ic_action_microphone"
+			    android:layout_weight="1"
+			    android:onClick="onClick"
+			    android:contentDescription="Entrada por voz"/>
+		</LinearLayout>
+		
+	    <!--<TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/label_novo_produto_categoria_produto"
+	        style="@style/label" />
+	    
+	     <Spinner android:id="@+id/novo_produto_spinner_categoria" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"/> -->
+	    <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+		    
+		    <Button android:layout_width="0dp"
+		        style="?android:attr/borderlessButtonStyle"
+		        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginStart="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginEnd="10dp"
+		        android:text="@string/cancelar"
+		        android:textColor="@android:color/white"
+		        android:background="@drawable/buttonshape"
+		        android:onClick="cancel"/>
+		    
+		    <Button android:layout_width="0dp"
+		        style="?android:attr/borderlessButtonStyle"
+		        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginStart="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginEnd="10dp"
+		        android:text="@string/salvar"
+		        android:textColor="@android:color/white"
+		        android:background="@drawable/buttonshape"
+		        android:onClick="saveProduto"/>
+		    
+	    </LinearLayout>
+	
+	</LinearLayout>
+
+</ScrollView>

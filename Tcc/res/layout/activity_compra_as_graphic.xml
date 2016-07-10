@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/activity_compras_as_graphic_chart"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        />
+    
+
+</LinearLayout>

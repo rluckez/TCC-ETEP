@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            style="@style/label"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+		
+           <EditText android:id="@+id/dialog_novo_supermercado_nome_supermercado" 
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="5"
+		    android:singleLine="true"
+		    android:hint="Digite o nome do supermercado"
+		    style="@style/value"/>
+		
+		<ImageButton android:id="@+id/dialog_novo_supermercado_input_voice_button" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/ic_action_microphone"
+		    android:onClick="startVoice"
+		    android:contentDescription="Entrada por voz"/>
+            
+        </LinearLayout>
+		
+</LinearLayout>

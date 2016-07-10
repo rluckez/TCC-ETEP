@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Deletar produtos"
+	    android:onClick="deletaProdutos"/>
+    
+    <Button android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Gerar código"
+	    android:onClick="generateBarcode"/>
+    
+    <ImageView android:id="@+id/iv_barcode" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

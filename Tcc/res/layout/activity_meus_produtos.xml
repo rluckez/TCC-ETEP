@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back1small">
+
+    <ListView android:id="@+id/activity_meus_produtos_list_produtos" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    
+    <TextView
+	     android:id="@+id/emptyElement"
+	     android:layout_width="wrap_content"
+	     android:layout_height="match_parent"
+	     android:layout_margin="10dp"
+	     android:text="NENHUM PRODUTO CADASTRADO! \n Para cadastrar um novo produto inicie uma nova compra e clique no ícone da camêra ou no + no topo da página."
+		 android:gravity="center_vertical|center"
+		 android:layout_gravity="center"
+	     android:textColor="@android:color/white"
+	     android:textSize="19.0sp"
+	     android:visibility="gone" />
+
+</LinearLayout>
